@@ -12,27 +12,27 @@
     box-shadow: none;
   }
   
-  .header-left, .header-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header-left .nav-link {
-    margin-right: 20px;
-  }
-  
-  .header-right .nav-link {
-    margin-left: 20px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #333;
-    font-family: "Pitchsans Regular", sans-serif;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #0073e6; /* Hover effect */
-  }
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .nav-link {
+  margin-right: 20px;
+}
+
+.header-right .nav-link {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #f0f8ff;
+  font-family: "Pitchsans Regular", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0073e6; /* Hover effect */
+}
