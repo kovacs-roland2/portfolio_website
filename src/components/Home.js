@@ -1,10 +1,8 @@
-import './Welcome.css';
-import Header from './Header';
+import './Home.css';
 
-const Welcome = () => {
+const Home = () => {
   return (
     <>
-      <Header/>
       <div className='welcome-wrapper'>
         <div className="welcome-container">
           <div className='text-content'>
@@ -38,4 +36,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Home;
