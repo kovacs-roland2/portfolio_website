@@ -31,6 +31,8 @@
 .about-right {
     flex: 2;
     margin-left: 100px;
+    border-left: 1px solid #f0f8ff;
+    padding-left: 15px;
 }
   
 .about-right h1 {
@@ -91,7 +93,7 @@
 }
 
 .circle.filled {
-    background-color: #2e4057;
+    background-color: #f0f8ff;
 }
   
 .experience-section {
