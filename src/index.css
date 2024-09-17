@@ -10,9 +10,9 @@ body {
   #1b263b 20%,   /* Dark blue */
   #2e4057 35%,   /* Deep grayish-blue */
   #778da9 50%,   /* Medium grayish-blue */
-  #b8ccf0 65%,   /* Soft light blue */
-  #f0f8ff 80%,   /* Very light blue */
-  #415a77 90%,   /* Medium-dark blue */
+  #b8ccf0 80%,   /* Soft light blue */
+  #f0f8ff 90%,   /* Very light blue */
+  #415a77 95%,   /* Medium-dark blue */
   #0d1b2a 100%   /* Back to dark navy */
 );
 background-blend-mode: normal;
