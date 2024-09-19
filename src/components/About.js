@@ -44,7 +44,7 @@ const About = () => {
           <div className="experience-section">
             <h2 className="tools-h2">Experience</h2>
             <div className="experience-item">
-                <h3>Data Scientist - 2022 to Present</h3>
+                <h3>Data Scientist - Sept. 2022 to Present</h3>
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
@@ -75,7 +75,7 @@ const About = () => {
             </div>
 
             <div className="experience-item">
-                <h3>Software Developer - 2021 to 2022</h3>
+                <h3>Software Developer - Apr. 2022 to Sept. 2022</h3>
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
@@ -106,7 +106,7 @@ const About = () => {
             </div>
 
             <div className="experience-item">
-                <h3>Business Analyst - 2018 to 2021</h3>
+                <h3>Business Analyst - Jun. 2018 to Apr. 2022</h3>
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
