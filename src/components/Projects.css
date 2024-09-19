@@ -28,68 +28,72 @@
     padding-bottom: 30px;
     border-bottom: 1px solid #f0f8ff;
 }
-  
-  /* Grid for Project Boxes */
-  .projects-grid {
+
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
+}
   
-  .project-box {
-    background-color: #fff;
+.project-box {
+    background-color: #f0f8ff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
   
-  .project-box:hover {
+.project-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  /* Image in Project Box */
-  .project-box img {
+
+.project-box img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
+    min-height: 240px;
+}
   
-  /* Title and Links */
-  .project-box h3 {
+.project-box h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-  }
+    font-family: "Superior title", Times New Roman, sans-serif;
+}
   
-  .project-box h3 a {
-    color: #0073e6;
+.project-box h3 a {
+    color: #333;
     text-decoration: none;
     transition: color 0.3s;
-  }
+}
   
-  .project-box h3 a:hover {
-    color: #005bb5;
-  }
+.project-box h3 a:hover {
+    color: #415a77;
+}
   
-  /* Description */
-  .project-box p {
+.project-box p {
     font-size: 1rem;
     color: #333;
-    margin-bottom: 15px;
-  }
+    flex-grow: 1;
+    font-family: "Pitchsans Regular", sans-serif;
+}
   
-  /* Read More Link */
-  .read-more {
+.read-more {
     font-size: 0.9rem;
-    color: #0073e6;
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
     transition: color 0.3s;
-  }
+    align-self: flex-end;
+    font-family: "Pitchsans Regular", sans-serif;
+}
   
-  .read-more:hover {
-    color: #005bb5;
-  }
+.read-more:hover {
+    color: #415a77;
+}
   

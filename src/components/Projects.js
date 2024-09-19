@@ -37,7 +37,10 @@ const ProjectsPage = () => {
             <div className="projects-grid">
                 {projects.map((project, index) => (
                 <div key={index} className="project-box">
-                    <img src={project.image} alt={project.title} />
+                    <a href={project.link} target='_blank' rel="noopener noreferrer">
+                        <img src={project.image} alt={project.title} />
+                    </a>
+                    
                     <h3><a href={project.link} target='_blank' rel="noopener noreferrer">{project.title}</a></h3>
                     <p>{project.description}</p>
                     <a href={project.link} target='_blank' rel="noopener noreferrer" className="read-more">Read more</a>
