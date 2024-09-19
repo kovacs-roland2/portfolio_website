@@ -1,0 +1,95 @@
+.projects-wrapper {
+    min-height: 100vh;
+}
+
+.projects-container{
+    width: 60%;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+  
+.projects-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Superior title", Times New Roman, sans-serif;
+    color: #f0f8ff;
+    text-align: center;
+}
+  
+.projects-wrapper h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: "Pitchsans Regular", sans-serif;
+    color: #f0f8ff;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0f8ff;
+}
+  
+  /* Grid for Project Boxes */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+  }
+  
+  .project-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image in Project Box */
+  .project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Title and Links */
+  .project-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-box h3 a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .project-box h3 a:hover {
+    color: #005bb5;
+  }
+  
+  /* Description */
+  .project-box p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Read More Link */
+  .read-more {
+    font-size: 0.9rem;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .read-more:hover {
+    color: #005bb5;
+  }
+  
