@@ -2,14 +2,10 @@ import React from "react";
 import './About.css';
 
 const tools = [
-    { name: 'Python', level: 4 }, 
-    { name: 'SQL', level: 4 }, 
-    { name: 'Django', level: 3 },
-    { name: 'R', level: 3 },
-    { name: 'React', level: 3 },
-    { name: 'Tableau', level: 3 },
-    { name: 'Scala', level: 2},
-    { name: 'AWS', level: 2},
+    { key: 'Programing languages:', values: "Python, R, SQL" }, 
+    { key: 'Frameworks:', values: "Django, scikit-learn, Tensorflow, Pytorch" }, 
+    { key: 'Data visualization:', values: "Tableau, PowerBI" },
+    { key: 'Tools/Platforms:', values: "AWS, Git, Docker, Pandas, Numpy, Matplotlib" },
   ];
 
 const About = () => {
@@ -30,11 +26,9 @@ const About = () => {
             <ul className="tools-ul">
               {tools.map((tool, index) => (
                 <li key={index}>
-                  <div className="tools-name">{tool.name}</div>
+                  <div className="tools-name">{tool.key}</div>
                   <div className="skill-level">
-                    {Array(5).fill(0).map((_, i) => (
-                      <span key={i} className={`circle ${i < tool.level ? 'filled' : ''}`}></span>
-                    ))}
+                    {tool.values}
                   </div>
                 </li>
               ))}
@@ -48,28 +42,21 @@ const About = () => {
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
-                        Mined and analyzed data from company databases to
-                        drive optimization and improvement of business
-                        strategies.
+                      Minded and analyzed data from company
+                      databases to optimize business strategies,
+                      enhance customer experience, and drive
+                      revenue growth using predictive modeling.
                     </li>
                     <li>
-                        Used predictive modeling to increase and optimize
-                        customer experience, revenue generation and other
-                        business strategies.
+                      Preprocessed structured and unstructured data
+                      to uncover trend and monitored model
+                      performances.
                     </li>
                     <li>
-                        Developed processes and tools to monitor and analyze
-                        model performance and data accuracy.
-                    </li>
-                    <li>
-                        Undertook preprocessing of structured and unstructured
-                        data and analyzed large amounts of information to
-                        discover trends and patterns.
-                    </li>
-                    <li>
-                        Used Natural Language Processing to provide solutions to
-                        the users’ problems by identifying similar issues in the
-                        incident ticketing system.
+                      Leveraged Natural Language Processing to
+                      identify recurring issues in incident ticketing
+                      systems and provide targeted solutions to
+                      users.
                     </li>
                 </ul>
             </div>
@@ -79,23 +66,16 @@ const About = () => {
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
-                        Supported the operation and development of the
-                        productivity tools including its infrastructure, interfaces
-                        based on system strategy, defined by functional manager,
-                        and product owner.
+                      Supported the development and operation of a
+                      web application, managing infrastructure,
+                      interfaces, and system changes in collaboration
+                      with stakeholders.
                     </li>
                     <li>
-                        Owned user stories, change requests, defects and
-                        developed solutions for these.
-                    </li>
-                    <li>
-                        Supported the communication between users, business
-                        analyst and development team in case of any system
-                        changes and outages.
-                    </li>
-                    <li>
-                        Developed own skills and knowledge in line with business
-                        strategy. Built gathered knowledge into team knowledge.
+                      Managed user stories, change requests, and
+                      incidents, delivering solutions while facilitating
+                      communication between users, analysts, and
+                      developers.
                     </li>
                     <li>
                         Built predictive models and Machine Learning algorithms
@@ -110,24 +90,19 @@ const About = () => {
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
-                        Supported business processes in various portfolio
-                        systems by developing SQL reports and queries.
-                    </li>
-                    <li>Provided technical and business support for incidents
-                        reported by the customers, including complex business
-                        and IT analysis.
-                    </li>
-                    <li>Represented the users’ needs by prioritizing customers
-                        and implementing changes based on collected feedback.
+                      Developed SQL reports to support business
+                      processes and ensure accurate portfolio
+                      reporting for audit examinations.
                     </li>
                     <li>
-                        Ensured that the clients pass the different audit related
-                        examinations by providing portfolio reports quickly and
-                        accurately.
+                      Provided technical and business support for
+                      customer-reported incidents, conducting in-
+                      depth analysis and implementing changes.
                     </li>
                     <li>
-                        Accelerated the migration of the business team’s data
-                        from one site to another using Selenium and Python.
+                      Streamlined data migration processes using
+                      Selenium and Python, accelerating transitions
+                      for the business teams.
                     </li>
                 </ul>
             </div>
