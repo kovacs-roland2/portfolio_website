@@ -38,71 +38,38 @@ const About = () => {
           <div className="experience-section">
             <h2 className="tools-h2">Experience</h2>
             <div className="experience-item">
-                <h3>Data Scientist - Sept. 2022 to Present</h3>
+                <h3>Data Scientist - Apr. 2022 to Present</h3>
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
-                      Minded and analyzed data from company
-                      databases to optimize business strategies,
-                      enhance customer experience, and drive
-                      revenue growth using predictive modeling.
+                      Optimized business strategies and revenue planning by developing a predictive Machine Learning model to forecast customer decisions at the end of their loaned asset lifecycle, driving actionable insights.
                     </li>
                     <li>
-                      Preprocessed structured and unstructured data
-                      to uncover trend and monitored model
-                      performances.
+                      Preprocessed and analyzed structured and unstructured data to identify trends and recurring errors in the portfolio system, enabling issue resolution and raising stakeholder awareness.
                     </li>
                     <li>
-                      Leveraged Natural Language Processing to
-                      identify recurring issues in incident ticketing
-                      systems and provide targeted solutions to
-                      users.
+                      Reduced incident ticket volume by 10% through the implementation of NLP solutions to identify and address recurring issues in ticketing system, improving efficiency and user satisfaction.
+                    </li>
+                    <li>
+                     Developed a virtual assistant using Generative AI and Large Language Models (LLMs) to automate SQL report generation.
+                    </li>
+                    <li>
+                      Implemented a clustering model to group sales opportunities, enabling the identification of high value deals worth financing. This solution supported decision-making processes and contributed to a more effective resource allocation.
                     </li>
                 </ul>
             </div>
-
-            <div className="experience-item">
-                <h3>Software Developer - Apr. 2022 to Sept. 2022</h3>
-                <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
-                <ul>
-                    <li>
-                      Supported the development and operation of a
-                      web application, managing infrastructure,
-                      interfaces, and system changes in collaboration
-                      with stakeholders.
-                    </li>
-                    <li>
-                      Managed user stories, change requests, and
-                      incidents, delivering solutions while facilitating
-                      communication between users, analysts, and
-                      developers.
-                    </li>
-                    <li>
-                        Built predictive models and Machine Learning algorithms
-                        and presented information by using data visualization
-                        techniques.
-                    </li>
-                </ul>
-            </div>
-
             <div className="experience-item">
                 <h3>Business Analyst - Jun. 2018 to Apr. 2022</h3>
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
-                      Developed SQL reports to support business
-                      processes and ensure accurate portfolio
-                      reporting for audit examinations.
+                      Developed SQL queries to extract and analyze financial data, ensuring audit reports consistently met accuracy standards. Collaborated with stakeholders to communicate technical insights clearly and effectively.
                     </li>
                     <li>
-                      Provided technical and business support for
-                      customer-reported incidents, conducting in-
-                      depth analysis and implementing changes.
+                      Conducted in-depth analysis of customer-reported incidents and provided solutions.
                     </li>
                     <li>
-                      Streamlined data migration processes using
-                      Selenium and Python, accelerating transitions
-                      for the business teams.
+                      Automated data migration processes using Python and Selenium, accelerating transitions and saving team resources.
                     </li>
                 </ul>
             </div>
