@@ -38,23 +38,38 @@ const About = () => {
           <div className="experience-section">
             <h2 className="tools-h2">Experience</h2>
             <div className="experience-item">
-                <h3>Data Scientist - Apr. 2022 to Present</h3>
+                <h3>Data Scientist - Apr. 2022 to 2025</h3>
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
-                      Optimized business strategies and revenue planning by developing a predictive Machine Learning model to forecast customer decisions at the end of their loaned asset lifecycle, driving actionable insights.
+                      Developed a predictive machine learning model
+                      to forecast customer decisions at the end of their
+                      lease or loan lifecycle, improving revenue
+                      forecasting and operational planning.
                     </li>
                     <li>
-                      Preprocessed and analyzed structured and unstructured data to identify trends and recurring errors in the portfolio system, enabling issue resolution and raising stakeholder awareness.
+                      Preprocessed and analyzed structured and
+                      unstructured data to identify trends and
+                      recurring errors in the portfolio system, enabling
+                      issue resolution and raising stakeholder
+                      awareness.
                     </li>
                     <li>
-                      Reduced incident ticket volume by 10% through the implementation of NLP solutions to identify and address recurring issues in ticketing system, improving efficiency and user satisfaction.
+                      Created NLP-based solutions to reduce incident
+                      ticket volume by 10%, saving teams hours of
+                      manual review monthly and improving efficiency
+                      and user satisfaction.
                     </li>
                     <li>
-                     Developed a virtual assistant using Generative AI and Large Language Models (LLMs) to automate SQL report generation.
+                      Built a Generative AI-based virtual assistant
+                      using Large Language Models to automate SQL
+                      report generation.
                     </li>
                     <li>
-                      Implemented a clustering model to group sales opportunities, enabling the identification of high value deals worth financing. This solution supported decision-making processes and contributed to a more effective resource allocation.
+                      Implemented clustering algorithms to group
+                      sales opportunities and identify high-value deals,
+                      enhancing decision-making and resource
+                      allocation.
                     </li>
                 </ul>
             </div>
@@ -63,13 +78,17 @@ const About = () => {
                 <p>IBM Hungary International Shared Service Centre Kft., Budapest</p>
                 <ul>
                     <li>
-                      Developed SQL queries to extract and analyze financial data, ensuring audit reports consistently met accuracy standards. Collaborated with stakeholders to communicate technical insights clearly and effectively.
+                      Developed SQL queries to extract and analyze
+                      financial data, ensuring audit reports
+                      consistently met accuracy standards.
                     </li>
                     <li>
-                      Conducted in-depth analysis of customer-reported incidents and provided solutions.
+                      Conducted in-depth analysis of customer-
+                      reported incidents and provided solutions.
                     </li>
                     <li>
-                      Automated data migration processes using Python and Selenium, accelerating transitions and saving team resources.
+                      Automated data migration task using Python and
+                      Selenium, reducing manual workload.
                     </li>
                 </ul>
             </div>
