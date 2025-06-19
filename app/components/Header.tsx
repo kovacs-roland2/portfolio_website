@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -19,6 +20,16 @@ const navItems: NavItem[] = [
 ];
 
 const Header = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <NavigationMenu className="absolute top-8 left-1/2 transform -translate-x-1/2 z-[100] bg-transparent">
       <NavigationMenuList className="flex gap-4 p-2">
