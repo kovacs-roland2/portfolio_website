@@ -34,7 +34,7 @@ export const Home: FC = () => {
             <div className="flex-shrink-0">
               <Avatar className="w-64 h-64 border-2 border-[#f0f8ff]">
                 <AvatarImage
-                  src="./photo.jpg"
+                  src="/photo.jpg"
                   alt="Roland Kovacs"
                   className="object-cover object-top"
                 />
