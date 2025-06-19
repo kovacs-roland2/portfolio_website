@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a clean design with smooth animations and professional presentation of projects and experience.
 
-## Available Scripts
+## 🚀 Tech Stack
 
-In the project directory, you can run:
+- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/) & [Font Awesome](https://fontawesome.com/)
+- **Deployment**: AWS S3 Static Hosting with GitHub Actions
 
-### `npm start`
+## 📁 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+portfolio_website/
+├── app/                    # Next.js App Router
+│   ├── components/        # Shared components
+│   ├── content/          # Content data and types
+│   ├── types/            # TypeScript type definitions
+│   ├── about/            # About page with components
+│   ├── projects/         # Projects page
+│   └── layout.tsx        # Root layout
+├── components/           # shadcn/ui components
+│   └── ui/              # Reusable UI components
+├── lib/                 # Utility functions
+└── public/              # Static assets
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Development
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 20+
+- npm
 
-### `npm run build`
+### Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone <your-repo-url>
+   cd portfolio_website
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Run the development server**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm run dev
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Available Scripts
 
-## Learn More
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production (static export)
+- `npm start` - Serve the production build locally
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎨 Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern UI**: Clean interface using shadcn/ui components
+- **Type Safety**: Full TypeScript implementation
+- **Static Export**: Optimized for static hosting
+- **SEO Friendly**: Proper meta tags and structure
+- **Fast Performance**: Next.js optimizations and code splitting
 
-### Code Splitting
+## 📄 Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Home** (`/`) - Landing page with introduction and contact links
+- **About** (`/about`) - Professional experience, skills, and background
+- **Projects** (`/projects`) - Portfolio of work and achievements
 
-### Analyzing the Bundle Size
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is automatically deployed to AWS S3 using GitHub Actions.
 
-### Making a Progressive Web App
+### Deployment Process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Push to main branch**
+2. **GitHub Actions workflow triggers**
+3. **Builds Next.js static export**
+4. **Syncs files to S3 bucket**
+5. **Website updates automatically**
 
-### Advanced Configuration
+### Required GitHub Secrets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Set these in your repository settings:
 
-### Deployment
+- `AWS_S3_BUCKET` - Your S3 bucket name
+- `AWS_ACCESS_KEY_ID` - AWS access key
+- `AWS_SECRET_ACCESS_KEY` - AWS secret key
+- `AWS_REGION` - AWS region (optional, defaults to us-east-1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔧 Configuration
 
-### `npm run build` fails to minify
+### Next.js Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project uses static export configuration in `next.config.ts`:
+
+```typescript
+const nextConfig: NextConfig = {
+  output: 'export', // Static export for S3
+  distDir: 'build', // Build output directory
+};
+```
+
+### Tailwind CSS
+
+Custom configuration with shadcn/ui integration and animations.
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run formatting: `npm run format`
+5. Submit a pull request
+
+## 📄 License
+
+This project is personal portfolio website. All rights reserved.
+
+---
+
+Built with ❤️ using Next.js and TypeScript
