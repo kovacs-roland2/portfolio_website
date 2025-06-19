@@ -1,39 +1,36 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import type { FC } from 'react';
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
+import type { NavItem, ComponentState } from '../types';
 
-interface NavItem {
-  href: string;
-  label: string;
-}
-
-const navItems: NavItem[] = [
+const navItems: readonly NavItem[] = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
-];
+] as const;
 
-const Header = () => {
-  const [isMounted, setIsMounted] = useState(false);
+const Header: FC = () => {
+  const [state, setState] = useState<ComponentState>({ isMounted: false });
 
   useEffect(() => {
-    setIsMounted(true);
+    setState({ isMounted: true });
   }, []);
 
-  if (!isMounted) {
+  if (!state.isMounted) {
     return null;
   }
 
   return (
     <NavigationMenu className="absolute top-8 left-1/2 transform -translate-x-1/2 z-[100] bg-transparent">
       <NavigationMenuList className="flex gap-4 p-2">
-        {navItems.map(item => (
+        {navItems.map((item: NavItem) => (
           <NavigationMenuItem key={item.href}>
             <NavigationMenuLink
               href={item.href}

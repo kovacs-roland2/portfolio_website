@@ -1,12 +1,14 @@
+import type { FC } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
 import { projectsData } from '@/app/content';
+import type { Project } from '@/app/types';
 
-export const ProjectsGrid = () => {
+export const ProjectsGrid: FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {projectsData.map((project, index) => (
+      {projectsData.map((project: Project, index: number) => (
         <Card
           key={`${project.title}-${index}`}
           className="bg-[#f0f8ff] border-[#f0f8ff]/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full"

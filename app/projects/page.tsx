@@ -1,11 +1,12 @@
 'use client';
 
+import type { FC } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { ProjectsHeader } from './components/projectsHeader';
 import { ProjectsGrid } from './components/projectsGrid';
 
-export default function ProjectsPage() {
+const ProjectsPage: FC = () => {
   return (
     <div className="flex justify-center items-start min-h-screen px-4 pt-24 pb-16">
       <Card className="w-full max-w-6xl mx-auto bg-black/20 backdrop-blur-sm border-[#f0f8ff]/20 shadow-2xl">
@@ -17,4 +18,6 @@ export default function ProjectsPage() {
       </Card>
     </div>
   );
-}
+};
+
+export default ProjectsPage;

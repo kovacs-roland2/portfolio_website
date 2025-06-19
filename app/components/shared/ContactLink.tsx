@@ -1,14 +1,8 @@
+import type { FC } from 'react';
 import { Button } from '@/components/ui/button';
+import type { ContactLinkProps } from '../../types';
 
-export const ContactLink = ({
-  href,
-  icon,
-  label,
-}: {
-  href: string;
-  icon: string;
-  label?: string;
-}) => {
+export const ContactLink: FC<ContactLinkProps> = ({ href, icon, label }) => {
   return (
     <Button
       variant="ghost"
@@ -22,7 +16,7 @@ export const ContactLink = ({
         rel="noopener noreferrer"
         aria-label={label}
       >
-        <i className={`${icon} text-2xl`}></i>
+        <i className={`${icon} text-2xl`} />
       </a>
     </Button>
   );

@@ -1,4 +1,6 @@
-export const ProjectsHeader = () => {
+import type { FC } from 'react';
+
+export const ProjectsHeader: FC = () => {
   return (
     <div className="text-center mb-16">
       <h1 className="text-[#f0f8ff] text-4xl lg:text-5xl font-normal mb-8">

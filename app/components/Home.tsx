@@ -1,10 +1,12 @@
+import type { FC } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';
 import { ContactLink } from './shared/ContactLink';
 import { homeContent, contactContent } from '../content';
+import type { ContactItem } from '../types';
 
-export const Home = () => {
+export const Home: FC = () => {
   return (
     <div className="flex justify-center items-center min-h-screen px-4">
       <Card className="w-full max-w-4xl mx-auto my-24 bg-black/20 backdrop-blur-sm border-[#f0f8ff]/20 shadow-2xl">
@@ -19,7 +21,7 @@ export const Home = () => {
               </p>
               <Separator className="bg-[#f0f8ff]/30 mb-8" />
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                {contactContent.map(contact => (
+                {contactContent.map((contact: ContactItem) => (
                   <ContactLink
                     key={contact.href}
                     href={contact.href}

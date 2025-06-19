@@ -1,20 +1,22 @@
+import type { FC } from 'react';
 import { tools } from '@/app/content';
 import { Badge } from '@/components/ui/badge';
+import type { Tool } from '@/app/types';
 
-export const Tools = () => {
+export const Tools: FC = () => {
   return (
     <div className="mb-16">
       <h2 className="text-[#f0f8ff] text-3xl font-normal mb-8 text-center">
         Technical Skills
       </h2>
       <div className="space-y-6">
-        {tools.map(tool => (
+        {tools.map((tool: Tool) => (
           <div key={tool.key} className="text-center">
             <h3 className="text-[#f0f8ff] text-xl font-medium mb-4">
               {tool.key}
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {tool.values.map(value => (
+              {tool.values.map((value: string) => (
                 <Badge
                   key={value}
                   variant="outline"

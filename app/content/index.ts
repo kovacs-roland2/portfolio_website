@@ -1,4 +1,13 @@
-export const homeContent = {
+import type {
+  HomeContent,
+  ContactContent,
+  ToolsContent,
+  ExperienceContent,
+  ProjectsContent,
+} from '../types';
+
+// Home page content
+export const homeContent: HomeContent = {
   title: 'Hello, I am Roland!',
   description: `I am a Data Scientist with 3 years of experience delivering predictive Machine Learning models,
   Natural Language Processing systems and Generative AI solutions. I am skilled in building and maintaining statistical
@@ -6,9 +15,10 @@ export const homeContent = {
   to analytical and non-analytical business partners and stakeholders. I am Experienced in the full data science lifecycle,
   from problem scoping and data preparation to model deployment and performance tracking. I am Passionate about using data
   to solve complex problems, drive business value, and continuously improve decision-making processes.`,
-};
+} as const;
 
-export const contactContent = [
+// Contact information
+export const contactContent: ContactContent = [
   {
     href: 'https://github.com/kovacs-roland2',
     icon: 'fab fa-github',
@@ -29,19 +39,25 @@ export const contactContent = [
     icon: 'fas fa-envelope',
     label: 'Email',
   },
-];
+] as const;
 
-export const aboutMeContent = `I'm Roland Kovacs, a Data Scientist with a passion for turning raw data into actionable insights. 
+// About page content
+export const aboutMeContent: string =
+  `I'm Roland Kovacs, a Data Scientist with a passion for turning raw data into actionable insights. 
 I got a Master's degree in Business Informatics from Budapest University of Technology and Economics, 
 with a specialization in using machine learning, data analysis and statistical techniques to solve complex problems. 
 I have experience working at IBM where I built predictive models, developed web applications, 
 and applied Natural Language Processing to optimize user experience. I'm comfortable in Python, Machine Learning, 
 React, and Data Visualization tools. In addition to technical expertise, I also have a strong interest in football analytics. 
 I have written research papers on player transfers and career development. When I'm not working with data 
-I also enjoy playing football, hiking, and cycling.`;
+I also enjoy playing football, hiking, and cycling.` as const;
 
-export const tools = [
-  { key: 'Programing languages:', values: ['Python', 'R', 'SQL'] },
+// Technical skills and tools
+export const tools: ToolsContent = [
+  {
+    key: 'Programming languages:',
+    values: ['Python', 'R', 'SQL'],
+  },
   {
     key: 'Web development:',
     values: ['JavaScript', 'React', 'Next.js', 'TypeScript'],
@@ -61,10 +77,14 @@ export const tools = [
     key: 'Data visualization:',
     values: ['Tableau', 'PowerBI', 'Matplotlib', 'Seaborn'],
   },
-  { key: 'Tools/Platforms:', values: ['AWS', 'Git', 'Docker', 'CI/CD'] },
-];
+  {
+    key: 'Tools/Platforms:',
+    values: ['AWS', 'Git', 'Docker', 'CI/CD'],
+  },
+] as const;
 
-export const experience = [
+// Professional experience
+export const experience: ExperienceContent = [
   {
     company: 'IBM',
     location: 'Budapest, Hungary',
@@ -90,16 +110,10 @@ export const experience = [
       'Automated data migration workflows using Python and Selenium, eliminating 100+ hours of manual work.',
     ],
   },
-];
+] as const;
 
-export interface Project {
-  title: string;
-  image: string;
-  description: string;
-  link: string;
-}
-
-export const projectsData: Project[] = [
+// Projects portfolio
+export const projectsData: ProjectsContent = [
   {
     title:
       'Spotting turning points in football team performance with Bayesian Inference',
@@ -136,4 +150,4 @@ export const projectsData: Project[] = [
       'In this article, we analyzed the naturally developed networks in the world of football and developed a transfer prediction classification model using its features.',
     link: 'https://www.researchgate.net/publication/355207733_Predicting_player_transfers_in_the_small_world_of_football',
   },
-];
+] as const;
