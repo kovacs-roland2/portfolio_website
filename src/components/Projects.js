@@ -4,6 +4,12 @@ import './Projects.css';
 const ProjectsPage = () => {
   const projects = [
     {
+      title: "Spotting turning points in football team performance with Bayesian Inference",
+      image: './bayesian.png',
+      description: 'In this article, I used Bayesian Inference to spot turning points in football team performance.',
+      url: 'https://medium.com/@rolandkovcs_38012/spotting-turning-points-in-football-team-performance-with-bayesian-inference-091bc21064e4'
+    },
+    {
       title: 'Visualising shots using football match event data in Python',
       image: './shots_plot.jpg',
       description: 'This article describes how you can create you own shot map in Python using football match event data.',
