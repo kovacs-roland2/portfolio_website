@@ -124,6 +124,23 @@
 .experience-item ul li {
     margin-bottom: 5px;
 }
+
+.position-duration {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.position {
+    font-weight: bold;
+    font-family: "Pitchsans Regular", sans-serif;
+}
+
+.duration {
+    font-style: italic;
+    color: #ccc;
+    font-family: "Pitchsans Regular", sans-serif;
+}
   
 .contact-section {
     margin-top: 40px;
