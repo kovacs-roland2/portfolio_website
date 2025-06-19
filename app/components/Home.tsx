@@ -1,13 +1,13 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';
-import { ContactLink } from './ContactLink';
+import { ContactLink } from './shared/ContactLink';
 import { homeContent, contactContent } from '../content';
 
 export const Home = () => {
   return (
     <div className="flex justify-center items-center min-h-screen px-4">
-      <Card className="w-full max-w-4xl mx-auto my-24 bg-transparent border-[#f0f8ff]/20 shadow-2xl">
+      <Card className="w-full max-w-4xl mx-auto my-24 bg-black/20 backdrop-blur-sm border-[#f0f8ff]/20 shadow-2xl">
         <CardContent className="p-10">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
             <div className="flex-1 text-center lg:text-left">
