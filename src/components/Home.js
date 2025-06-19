@@ -8,10 +8,7 @@ const Home = () => {
           <div className='text-content'>
             <h1 className="welcome-title">Hello, I am Roland.</h1>
             <p className="welcome-description">
-            I'm a Data Scientist with a strong background in information technology and services. I specialize in gathering, cleaning, and analyzing data using 
-            advanced statistical and machine learning techniques. With skills in Python, Machine Learning, Data Analysis, and React, I bring technical expertise to 
-            solving complex data problems. I hold a Master's degree in Business Informatics from Budapest University of Technology and Economics and have a keen 
-            interest in football analytics.
+            Data Scientist with 3 years of experience delivering predictive Machine Learning models, Natural Language Processing systems and Generative AI solutions. Skilled in building and maintaining statistical forecasting models, extracting insights from large structured and unstructured datasets, and communicating results to analytical and non-analytical business partners and stakeholders. Experienced in the full data science lifecycle, from problem scoping and data preparation to model deployment and performance tracking. Passionate about using data to solve complex problems, drive business value, and continuously improve decision-making processes.
             </p>
             <div className="contact-section">
               <a href="https://github.com/kovacs-roland2" target="_blank" rel="noopener noreferrer" className="contact-link">
